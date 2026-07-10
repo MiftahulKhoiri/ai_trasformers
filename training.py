@@ -166,7 +166,7 @@ def main():
         mlm=False,
     )
 
-    # 6. Training arguments
+    # 6. Training arguments  (diperbaiki: eval_strategy)
     training_args = TrainingArguments(
         output_dir=cfg["output_dir"],
         num_train_epochs=cfg["num_train_epochs"],
@@ -177,7 +177,7 @@ def main():
         warmup_steps=cfg["warmup_steps"],
         logging_dir=os.path.join(cfg["output_dir"], "logs"),
         logging_steps=cfg["logging_steps"],
-        evaluation_strategy="steps",
+        eval_strategy="steps",                  # <-- perbaikan di sini
         eval_steps=cfg["save_steps"],
         save_strategy="steps",
         save_steps=cfg["save_steps"],
