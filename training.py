@@ -40,7 +40,7 @@ def get_config():
         "max_length": 256,                  # Panjang maksimum token (sesuaikan dengan data)
 
         # --- Model (from scratch) ---
-        "model_type": "gpt2",               # Arsitektur GPT-2 kecil (bisa "distilgpt2")
+        "model_type": "distilgpt2",               # Arsitektur GPT-2 kecil (bisa "distilgpt2")
         # Bobot acak (from_config)
 
         # --- Training hyperparameters ---
