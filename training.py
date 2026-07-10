@@ -61,7 +61,7 @@ def get_config():
 
         # --- Monitoring memori ---
         "log_memory": True,                 # Aktifkan log penggunaan RAM
-        "memory_log_steps": 200,            # Cetak info memori setiap N langkah (None = setiap logging step)
+        "memory_log_steps": 10,            # Cetak info memori setiap N langkah (None = setiap logging step)
         "memory_log_epochs": False,         # Cetak info memori setiap akhir epoch (True/False)
     }
     return config
